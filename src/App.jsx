@@ -145,6 +145,21 @@ export default function AppleMusicPortfolio() {
     },
     {
       id: 2,
+      title: 'Youtube Fan Insight Analyzer',
+      category: 'Hackathon /AI',
+      tech: 'Replit • Python • Gemeni',
+      desc: 'Fan insights from YT comments based on given instructions. Api not maintained please use example data button',
+      liveUrl: 'https://trend-tracker--jazzjdpr.replit.app/',
+      githubUrl: 'https://github.com/Jazzdp/fan-insight-analyzer',
+      highlights: [
+        'AI-powered fan insights via Gemini',
+        'Integration with YouTube API for comment analysis',
+        'Real-time data processing and visualization',
+      ],
+      color: 'from-pink-500 to-rose-600',
+    },
+    {
+      id: 3,
       title: 'JazzShell',
       category: 'Shell / CLI',
       tech: 'Java • Linux • Bash',
@@ -171,6 +186,8 @@ export default function AppleMusicPortfolio() {
     { id: 6, name: 'Tailwind CSS', album: 'Styling', duration: '3:20', desc: 'Utility-first styling for fast, consistent interface building.', usedIn: ['6th Sense'] },
     { id: 7, name: 'Linux & Bash', album: 'Systems', duration: '4:50', desc: 'Comfortable on the command line — enough to write my own shell for it.', usedIn: ['JazzShell'] },
     { id: 8, name: 'Git & CI/CD', album: 'Workflow', duration: '3:55', desc: 'Branching discipline and deployment pipelines to Vercel and beyond.', usedIn: ['6th Sense', 'JazzShell'] },
+    {id: 9, name: 'Unit Testing', album: 'Workflow', duration: '5:00', desc: 'Writing and maintaining tests to ensure code quality and prevent regressions.', usedIn: ['6th Sense'] },
+    {id:10, name: 'Penetration Testing', album: 'Security', duration: '4:40', desc: 'Identifying and mitigating security vulnerabilities in web applications.', usedIn: ['6th Sense'] },
   ];
 
   // ---------- Hobbies as "Stations" ----------
@@ -212,10 +229,10 @@ export default function AppleMusicPortfolio() {
       detail: 'Graphic design is where my engineering and aesthetics meet usually for my projects but also for my club activities.',
     },
     {
-      id: 7, name: 'Coding', tagline: 'The hobby that compounds', emoji: '💻', glyph: '</>',
+      id: 7, name: 'CTF', tagline: 'The hobby that compounds', emoji: '💻', glyph: '</>',
       gradient: 'from-emerald-500 via-teal-500 to-cyan-600',
       desc: 'Small tools and experiments built purely for curiosity.',
-      detail: 'Off the clock I still build tiny tools, experiments and throwaway apps. Side projects are where I try the things the curriculum hasn’t caught up to yet.',
+      detail: 'Other than coding, I also enjoy participating in Capture The Flag (CTF) competitions to test my problem-solving and security skills.',
     },
   ];
 
@@ -251,9 +268,37 @@ export default function AppleMusicPortfolio() {
       name: 'NDG Linux Unhatched',
       issuer: 'Cisco Networking Academy · NDG',
       year: '2026',
-      status: 'in-progress',
-      note: 'Currently working through Linux command-line fundamentals.',
+      status: 'verified',
+      credentialUrl: 'https://www.netacad.com/recognitions/verify/d7987ba3-d84b-42d0-a2c5-9f989b826267',
+      note: 'Linux command-line fundamentals.',
     },
+     {
+      id: 5,
+      name: 'NDG Linux Essentials',
+      issuer: 'Cisco Networking Academy · NDG',
+      year: '2026',
+      status: 'in-progress',
+      note: 'Linux command-line in depth.',
+    },
+     {
+      id: 6,
+      name: 'NASA Open Science Essentials',
+      issuer: 'NASA',
+      year: '2026',
+      status: 'verified',
+      credentialUrl: 'https://www.credly.com/badges/044e4b3b-ce42-44cf-b1b5-b2674ea5ee3f/public_url',
+      note: 'Open science principles and practices.',
+    },
+    {
+      id: 7,
+      name: 'NASA Open Science 101',
+      issuer: 'NASA',
+      year: '2026',
+      status: 'verified',
+      credentialUrl: 'https://www.credly.com/badges/01ac4534-21b5-45c2-9998-0c9eea697acb/public_url',
+      note: 'Open science principles and practices in depth.',
+    },
+    
   ];
 
   // ---------- Playlists ----------
@@ -653,14 +698,7 @@ export default function AppleMusicPortfolio() {
                       >
                         <Play className="h-3.5 w-3.5 fill-current" /> Open Live Demo
                       </a>
-                      <a
-                        href={featured.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 bg-black/30 backdrop-blur text-white text-xs font-bold px-5 py-2.5 rounded-full hover:bg-black/40 transition-colors"
-                      >
-                        <Github className="h-3.5 w-3.5" /> View Code
-                      </a>
+        
                     </div>
                   </div>
                 </div>
@@ -993,7 +1031,7 @@ export default function AppleMusicPortfolio() {
                 </>
               )}
 
-              {/* Certification body — credential link, no music */}
+              {/* Certification body */}
               {t === 'song' && (
                 <>
                   
